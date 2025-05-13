@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-pqcrypto-falcon = "0.4"
+pqcrypto-falcon = { version = "0.4", features = ["avx2", "neon"] }
 pqcrypto-traits = "0.3"
 pyo3 = { version = "0.24", features = ["extension-module"] }
 
