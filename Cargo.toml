@@ -1,0 +1,14 @@
+[package]
+name = "falcon_python"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pqcrypto-falcon = "0.4"
+pqcrypto-traits = "0.3"
+pyo3 = { version = "0.24", features = ["extension-module"] }
+
+
+[lib]
+crate-type = ["cdylib"]
+name = "falcon_python"
